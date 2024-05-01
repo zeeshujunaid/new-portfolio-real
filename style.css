@@ -288,7 +288,7 @@ ul {
     backdrop-filter: blur 10px;
     border-radius:20px ;
     width: 40%;
-    padding-left: 60px;
+    padding-left: 40px;
 }
 .about-left-side-pic-div{
     display: flex;
@@ -309,6 +309,18 @@ ul {
     padding-left: 15px;
     padding-top: 40px;
 }
+.about-me-right-side{
+    gap: 20px;
+    width: 40%;
+    padding-left: 60px;
+    background-color: rgba(255, 255, 255, 0.315) ;
+    border: 1px white;
+    backdrop-filter: blur 10px;
+    border-radius:20px ;
+}
+.about-me-right-side h4{
+    padding-top: 20px;
+}
 @media screen and (max-width: 900px) {
     body {
         margin: 0;
@@ -323,7 +335,7 @@ ul {
 
     .navbar-letf-side {
         flex-direction: row;
-        padding-left: 50px;
+        padding-left: 40px;
         width: 100%;
     }
 
@@ -376,11 +388,62 @@ ul {
     .about-me-heading{
         display: flex;
         flex-direction: row;
-        font-size: 9px;
+        font-size: 7px;
+        padding-left:43px;
+        width: 80%;
+    }
+    .about-me-left-side{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.315) ;
+        border: 1px white;
+        backdrop-filter: blur 10px;
+        border-radius:20px ;
+        width: 60%;
+        padding-left: 90px;
+    }
+    .about-me-left-side h1{
+        display: flex;
+        flex-direction:column;
+        padding-left: 0rem;
         width: 100%;
-        align-items: center;
-        justify-content: center;
-        padding-left: 1px;
-        padding-top: 11rem;
+        
+    }
+
+    .about-me-main-div{
+        flex-direction: column;
+        width: 70%;
+        padding-left: 80px;
+    }
+    .about-left-side-pic-div{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 20px;
+        padding-left: 10px;
+    }
+    .about-left-side-pic-div img{
+        height: 4rem;
+        width: 6rem;
+        padding-left: 0px;
+        ;
+    }
+    .about-left-side-pic-second-div img{
+        height: 6rem;
+        width: 10rem;
+        padding-left: 0px;
+        padding-top: 40px;
+    }
+    .about-me-right-side{
+        gap: 20px;
+        width:80%;
+        padding-left:50px;
+        background-color: rgba(255, 255, 255, 0.315) ;
+        border: 1px white;
+        backdrop-filter: blur 10px;
+        border-radius:20px ;
+    }
+    .about-me-right-side h4{
+        padding-top: 20px;
     }
 }
