@@ -6,7 +6,6 @@ body {
     background-size: cover;
     background-position-x:50% ;
     background-position-y:50% ;
-
 }
 
 .navbar {
@@ -152,13 +151,13 @@ body {
     width: 50%;
     align-items: center;
     justify-content: center;
-    padding-top: 7rem;
+    /* padding-top: 1rem; */
 
 }
 
 .content-right-side img {
-    height: 14rem;
-    width: 50%;
+    height: 25rem;
+    width: 60%;
 }
 
 .link-icon-div {
@@ -276,7 +275,40 @@ ul {
     padding-left: 80px;
     padding-top: 10rem;
 }
-
+.about-me-main-div{
+    display: flex;
+    flex-direction: row;
+    padding-left: 80px;
+}
+.about-me-left-side{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.315) ;
+    border: 1px white;
+    backdrop-filter: blur 10px;
+    border-radius:20px ;
+    width: 40%;
+    padding-left: 60px;
+}
+.about-left-side-pic-div{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+.about-me-left-side h1{
+    padding-left: 90px;
+}
+.about-left-side-pic-div img{
+    height: 4rem;
+    width: 6rem;
+    padding-left: 25px;
+}
+.about-left-side-pic-second-div img{
+    height: 6rem;
+    width: 9rem;
+    padding-left: 15px;
+    padding-top: 40px;
+}
 @media screen and (max-width: 900px) {
     body {
         margin: 0;
@@ -331,12 +363,15 @@ ul {
 
     .content-right-side {
         width: 100%;
-        padding-top: 40rem;
+        padding-top: 10rem;
+        z-index: -1;
+        filter: brightness(-20px) blur(2px);
+
     }
 
     .content-right-side img {
-        height: 16rem;
-        width: 70%;
+        height: 20rem;
+        width: 80%;
     }
     .about-me-heading{
         display: flex;
@@ -346,6 +381,6 @@ ul {
         align-items: center;
         justify-content: center;
         padding-left: 1px;
-        padding-top: 1rem;
+        padding-top: 11rem;
     }
 }
