@@ -1,3 +1,6 @@
+*{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +9,7 @@ body {
     background-size: cover;
     background-position-x:50% ;
     background-position-y:50% ;
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -49,6 +53,8 @@ body {
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: black;
+    font-style: unset;
 }
 
 .navbar-hire-btn {
@@ -279,6 +285,9 @@ ul {
     display: flex;
     flex-direction: row;
     padding-left: 80px;
+    padding-top: 40px;
+    gap: 40px;
+
 }
 .about-me-left-side{
     display: flex;
@@ -321,6 +330,120 @@ ul {
 .about-me-right-side h4{
     padding-top: 20px;
 }
+.project-my-heading{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    padding-left: 80px;
+    padding-top: 5rem;
+ } 
+.project-main-div{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    padding-left: 10rem !important;
+   padding-bottom: 20px;
+}
+.project-leftside-div{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.315) ;
+    border: 1px white;
+    backdrop-filter: blur 10px;
+    border-radius:20px ;
+    justify-content: center;
+    align-items: center;
+}
+.project-leftside-div img{
+    display: flex;
+    width:100%;
+    height: 20rem;
+    width: 30rem;
+    border-radius: 20px;
+}
+.project-rightside-div{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    height: 28rem;
+   background-color: rgba(255, 255, 255, 0.315) ;border: 1px white;
+    backdrop-filter: blur 10px;
+    border-radius:20px ;
+}
+.project-rightside-div h6{
+    font-family: "Poetsen One", sans-serif;
+font-size: x-large;
+padding-left: 30px;
+}
+.project-rightside-div h1{
+    font-family: "Poetsen One", sans-serif;
+font-size: x-large;
+padding-left: 30px;
+}
+.project-rightside-btn{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-bottom: 75px;
+}
+.btn-row-div{
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+}
+.btn {
+    font-size: 1rem;
+    width: 5rem;
+    padding: 1rem ;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  }
+  
+  .btn:active {
+    scale: 0.92;
+  }
+  
+  .btn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+  }
+  .footer-main{
+    display: flex;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    flex-direction: row;
+    padding-top: 10rem;
+    background-image: url("./pics/wave.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .social-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-link-div-2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .social-link-div-2 p{
+  text-decoration: none;
+    color: black;
+  }
 @media screen and (max-width: 900px) {
     body {
         margin: 0;
@@ -399,20 +522,19 @@ ul {
         border: 1px white;
         backdrop-filter: blur 10px;
         border-radius:20px ;
-        width: 60%;
-        padding-left: 90px;
+        width: 80%;
+        padding-left: 1rem !important;
     }
     .about-me-left-side h1{
         display: flex;
         flex-direction:column;
-        padding-left: 0rem;
-        width: 100%;
-        
+        padding-left: 0rem !important;
+        width: 100%;   
     }
 
     .about-me-main-div{
         flex-direction: column;
-        width: 70%;
+        width: 80%;
         padding-left: 80px;
     }
     .about-left-side-pic-div{
@@ -420,7 +542,7 @@ ul {
         flex-direction: column;
         width: 50%;
         gap: 20px;
-        padding-left: 10px;
+        padding-left: 5rem !important;
     }
     .about-left-side-pic-div img{
         height: 4rem;
@@ -430,14 +552,14 @@ ul {
     }
     .about-left-side-pic-second-div img{
         height: 6rem;
-        width: 10rem;
-        padding-left: 0px;
+        width: 50%;
+        padding-left: 4rem !important;
         padding-top: 40px;
     }
     .about-me-right-side{
         gap: 20px;
-        width:80%;
-        padding-left:50px;
+        padding-left: 2rem !important;
+        width:75%;
         background-color: rgba(255, 255, 255, 0.315) ;
         border: 1px white;
         backdrop-filter: blur 10px;
@@ -446,4 +568,46 @@ ul {
     .about-me-right-side h4{
         padding-top: 20px;
     }
+    .project-my-heading{
+        display: flex;
+        flex-direction: row;
+        font-size: 7px; 
+        padding-left: 2rem !important;    
+    }
+    .project-main-div{
+        display: flex;
+        flex-direction: column;
+        padding-left: 5rem !important;
+    }
+    .project-leftside-div img{
+        display: flex;
+        padding-top: 5px;
+        width:30%;
+        height: 10rem;
+        width: 15rem;
+        border-radius: 20px;
+    }
+    .project-rightside-div{
+        display: flex;
+    }
+    .project-rightside-div h6{
+        display:flex ;
+        font-size: small;
+        
+    }
+    .project-rightside-div h1{
+       display: flex;
+    }
+    .btn-row-div{
+        display: flex !important;
+        flex-direction:column !important;
+        gap: 2px !important;
+        
+    }
+    .footer-main{
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        padding-top: 5rem;
+      }
 }
