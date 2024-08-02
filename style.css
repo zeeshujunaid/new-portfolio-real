@@ -164,6 +164,7 @@ body {
 .content-right-side img {
     height: 25rem;
     width: 60%;
+    border-radius: 10%;
 }
 
 .link-icon-div {
