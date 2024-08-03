@@ -483,7 +483,7 @@ padding-left: 30px;
 
     .navbar {
         flex-direction: column;
-        background-color: #0274b3;
+        /* background-color: #0274b3; */
         /* width: 100%; */
     }
 
@@ -581,10 +581,18 @@ padding-left: 30px;
         ;
     }
     .heading-for-mobile{
-        
+       display: flex;
+       flex-direction: column; 
     }
     .tool-for-mobile{
-
+        display:flex;
+       flex-direction: row;
+       justify-content: space-around; 
+    }
+    .tool-for-mobile h3{
+        background-color: #24262ae1;
+        color: white;
+        border: 1px solid black;
     }
     .about-left-side-pic-second-div {
         display: flex;
