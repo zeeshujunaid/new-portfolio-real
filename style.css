@@ -569,6 +569,9 @@ padding-left: 30px;
     .about-me-main-div{
         flex-direction: column;
     }
+    .about-me-left-side h1{
+        display: none;
+    }
     .about-left-side-pic-div{
         display: flex;
         flex-direction: column;
