@@ -540,7 +540,7 @@ padding-left: 30px;
 
     .content-right-side {
         width: 100%;
-        padding-top: 10rem;
+        padding-top: 15rem !important;
         z-index: -1;
         filter: brightness(-20px) blur(2px);
 
