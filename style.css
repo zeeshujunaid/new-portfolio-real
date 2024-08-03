@@ -11,7 +11,14 @@ body {
     background-position-y:50% ;
     scroll-behavior: smooth;
 }
-
+#loader-main-div {
+    background: #000000 url("https://cdn.dribbble.com/users/664475/screenshots/5411820/dribbble.gif") no-repeat center center;
+    background-size: 50vh;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
 .navbar {
     display: flex;
     flex-direction: row;
@@ -396,7 +403,7 @@ justify-content: center;
 }
 .project-rightside-div h6{
     font-family: "Poetsen One", sans-serif;
-font-size: xx-large;
+font-size: 20px;
 padding-left: 30px;
 }
 .project-rightside-div h1{
