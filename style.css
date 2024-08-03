@@ -518,7 +518,11 @@ padding-left: 30px;
         align-items: center;
         flex-direction: column;
     }
-
+.content-for-mobile{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3vh;
+}
     .content-left-side h3 {
         padding-bottom: 35px;
     }
