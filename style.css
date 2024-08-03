@@ -297,34 +297,56 @@ ul {
     border: 1px white;
     backdrop-filter: blur 10px;
     border-radius:20px ;
-    width: 40%;
-    padding-left: 40px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    /* background-color: #0274b3; */
+    padding-left: 60px;
 }
 .about-left-side-pic-div{
     display: flex;
     flex-direction: row;
-    width: 30%;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 .about-me-left-side h1{
-    padding-left: 90px;
+    /* padding-left: 90px; */
 }
 .about-left-side-pic-div img{
     height: 4rem;
     width: 6rem;
     padding-left: 25px;
+    object-fit: contain;
+
+}
+.about-left-side-pic-second-div{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
 .about-left-side-pic-second-div img{
-    height: 6rem;
-    width: 9rem;
-    padding-left: 15px;
-    padding-top: 80px;
+    height: 4rem;
+    width: 6rem;
+    padding-left: 25px;
+    object-fit: contain;
+}
+.img-and-tag-div{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 .about-me-right-side{
     gap: 20px;
-    width: 40%;
-    padding-left: 60px;
-    background-color: rgba(255, 255, 255, 0.315) ;
-    border: 1px white;
+    width: 80%;
+    padding-left:14vw;
+    background-color: rgba(255, 255, 255, 0.342) ;
+    border: 1px rgba(255, 255, 255, 0.61);
     backdrop-filter: blur 10px;
     border-radius:20px ;
 }
@@ -374,7 +396,7 @@ ul {
 }
 .project-rightside-div h6{
     font-family: "Poetsen One", sans-serif;
-font-size: x-large;
+font-size: xx-large;
 padding-left: 30px;
 }
 .project-rightside-div h1{
@@ -445,6 +467,12 @@ padding-left: 30px;
   text-decoration: none;
     color: black;
   }
+  .heading-for-mobile{
+   display: none;     
+  }
+  .tool-for-mobile{
+      display: none;
+  }
 @media screen and (max-width: 900px) {
     body {
         margin: 0;
@@ -455,6 +483,8 @@ padding-left: 30px;
 
     .navbar {
         flex-direction: column;
+        background-color: #0274b3;
+        /* width: 100%; */
     }
 
     .navbar-letf-side {
@@ -464,10 +494,10 @@ padding-left: 30px;
     }
 
     .navbar-right-side {
-        width: 90%;
-        flex-direction: row;
-        align-items: center;
-        padding-left: 10px;
+        display: flex;
+    flex-direction: row;
+    width: 60%;
+    /* background-color: #0274b3; */
     }
 
     .navbar-hire-btn {
@@ -483,8 +513,8 @@ padding-left: 30px;
     }
 
     .content-left-side {
-        width: 100%;
-        height: 50px;
+        width: 90%;
+        /* height: 50px; */
         align-items: center;
         flex-direction: column;
     }
@@ -506,7 +536,7 @@ padding-left: 30px;
     }
 
     .content-right-side img {
-        height: 20rem;
+        /* height: 20rem; */
         width: 80%;
     }
     .about-me-heading{
@@ -523,43 +553,50 @@ padding-left: 30px;
         border: 1px white;
         backdrop-filter: blur 10px;
         border-radius:20px ;
-        width: 80%;
+        width: 50%;
         padding-left: 1rem !important;
     }
     .about-me-left-side h1{
         display: flex;
         flex-direction:column;
-        padding-left: 0rem !important;
         width: 100%;   
     }
 
     .about-me-main-div{
         flex-direction: column;
-        width: 80%;
-        padding-left: 80px;
     }
     .about-left-side-pic-div{
         display: flex;
         flex-direction: column;
-        width: 50%;
-        gap: 20px;
-        padding-left: 5rem !important;
+        width: 10%;
+        display: none;
     }
     .about-left-side-pic-div img{
         height: 4rem;
         width: 6rem;
-        padding-left: 0px;
         ;
+    }
+    .heading-for-mobile{
+        
+    }
+    .tool-for-mobile{
+
+    }
+    .about-left-side-pic-second-div {
+        display: flex;
+        flex-direction: column !important;
+        display: none;
+
     }
     .about-left-side-pic-second-div img{
         height: 6rem;
         width: 50%;
-        padding-left: 4rem !important;
-        padding-top: 40px;
+        display: flex;
+        flex-direction: column !important;
     }
     .about-me-right-side{
         gap: 20px;
-        padding-left: 2rem !important;
+        /* padding-left: 4rem !important; */
         width:75%;
         background-color: rgba(255, 255, 255, 0.315) ;
         border: 1px white;
