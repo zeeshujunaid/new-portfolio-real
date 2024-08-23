@@ -7,6 +7,7 @@
   <title>zeeshan portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +19,11 @@
 </head>
 
 <body>
-      <!--                                lader code start                          -->
-      <div id="loader-main-div"></div>
-      <!--                                loader code ends                          -->
+  <!--                                lader code start                          -->
+  <div id="loader-main-div"></div>
+  <!--                                loader code ends                          -->
   <!--                                           navbar bar                                                   -->
-  <div class="navbar">
+  <div class="navbar" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
     <div class="navbar-letf-side">
       <img src="./pics/zjlogo.png" class="nav-logo-img">
       <h1>ZEESHAN JUNAID</h1>
@@ -46,7 +47,7 @@
   </div>
   <!--                                           main content                                                  -->
   <div class="content-main-div" id="content-main-div">
-    <div class="content-left-side">
+    <div class="content-left-side" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
       <div class="content-for-mobile">
         <h4>👋 Hi, I am</h4>
         <h1>ZEESHAN JUNAID</h1>
@@ -115,17 +116,15 @@
 
       </div>
     </div>
-    <div class="content-right-side">
+    <div class="content-right-side" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
       <img src="./pics/zzz.png">
     </div>
   </div>
   <!--                                           about me more                                                  -->
-  <div class="about-me-heading">
-    <h3>------------------------------------------ ABOUT ME ------------------------------------------</h3>
-  </div>
   <div class="about-me-main-div" id="about-section">
-    <div class="about-me-left-side">
-      <h1>LANGUAGE I KNOW</h1>
+    <h1> ABOUT ME </h1>
+    <div class="about-me-left-side" data-aos="flip-left">
+      <h1>LANGUAGE/TOOLS I USED</h1>
       <div class="about-left-side-pic-div">
         <div class="img-and-tag-div">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYk594AhSKw5Eb3iHkPHs_XmpCqaRVgu0mvg&s">
@@ -144,10 +143,10 @@
           <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png">
           <h4 style="padding-left: 30px;">REACT.JS</h4>
         </div>
-        <div class="img-and-tag-div">
+        <!-- <div class="img-and-tag-div">
           <img src="https://static-00.iconduck.com/assets.00/nextjs-icon-512x512-y563b8iq.png">
           <h4 style="padding-left: 30px;">NEXTJS</h4>
-        </div>
+        </div> -->
         <div class="img-and-tag-div">
           <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png">
           <h4 style="padding-left: 30px;">REACT NATIVE</h4>
@@ -155,6 +154,10 @@
         <div class="img-and-tag-div">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmrGmeBv3SOLSKz6OlTVlVYkfH9_W3BBgdrA&s">
           <h4 style="padding-left: 30px;">GITHUB</h4>
+        </div>
+        <div class="img-and-tag-div">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_16ycVDLnLy0nYPOuF6xx1NxUQ7UFZZN0yw&s">
+          <h4 style="padding-left: 30px;">TYPE SCRIPT</h4>
         </div>
       </div>
       <div class="about-left-side-pic-second-div">
@@ -176,13 +179,34 @@
           <h4 style="padding-left: 30px;">BOOTSTRAP</h4>
         </div>
         <div class="img-and-tag-div">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_16ycVDLnLy0nYPOuF6xx1NxUQ7UFZZN0yw&s">
-          <h4 style="padding-left: 30px;">TYPE SCRIPT</h4>
-        </div>
-        <div class="img-and-tag-div">
           <img src="https://cdn.iconscout.com/icon/free/png-256/free-mongodb-3521676-2945120.png?f=webp">
           <h4 style="padding-left: 30px;">MONGO DB</h4>
         </div>
+      </div>
+    </div>
+    <div class="about-me-left-side" data-aos="flip-left">
+      <div
+        style="display: flex;flex-direction: row;width: 90%;justify-content: center;align-items: center;height:10vh;">
+        <h1>MORE ABOUT ME</h1>
+      </div>
+      <div
+        style="display: flex;flex-direction: row;width: 90%;justify-content: center;align-items: center;height: 15vh;font-family:sans-serif !important;"">
+        <h3> HI MY NAME IS ZEESHAN AND I,M A WEB AND MOBILE APP DEVELOPER FROM KARACHI PAKISTAN</h3>
+      </div>
+      <div
+        style=" display: flex;flex-direction: column;width: 90%;justify-content: center;align-items: center;height:
+        50vh;font-family:sans-serif !important;">
+        <h3>I'm a self-motivated individual with a strong drive for continuous learning and growth. My journey into web
+          development began with a curiosity for technology and a desire to make a positive impact through my work. With
+          a focus on clean code and user-centric design, I aim to create seamless experiences that leave a lasting
+          impression. In my free time, you can find me exploring the latest web development trends, experimenting with
+          new technologies, or enjoying the great outdoors. I believe in the power of collaboration and am always eager
+          to connect with like-minded individuals to exchange ideas and embark on new adventures in the digital realm.
+        </h3>
+        <h3>As I embark on my journey in the tech industry, I’m excited to collaborate with clients and contribute to
+          projects that make a difference. Whether you're looking to build a responsive website, a dynamic web
+          application, I’m here to help turn your ideas into reality.</h3>
+        <h3>Let’s create something amazing together!</h3>
       </div>
     </div>
   </div>
@@ -209,128 +233,106 @@
       <h3>MONGO DB</h3>
     </div>
     <div class="tool-for-mobile">
-    <h3>TYPE SCRIPT</h3>
+      <h3>TYPE SCRIPT</h3>
     </div>
     <div class="tool-for-mobile">
 
     </div>
   </div>
-  <div class="about-me-right-side">
-    <h1>MORE ABOUT ME</h1>
-    <H2>Hi my name is zeeshan i m a passionate web developer from karachi pakistan</H2>
-    <h2>I'm a self-motivated individual with a strong drive for continuous learning and growth. My journey into web
-      development began with a curiosity for technology and a desire to make a positive impact through my work. With a
-      focus on clean code and user-centric design, I aim to create seamless experiences that leave a lasting
-      impression.
 
-      In my free time, you can find me exploring the latest web development trends, experimenting with new
-      technologies, or enjoying the great outdoors. I believe in the power of collaboration and am always eager to
-      connect with like-minded individuals to exchange ideas and embark on new adventures in the digital realm.
-
-      Let's build something amazing together!</h2>
-  </div>
   </div>
   <!--                                                projects                                                      -->
-  <div class="project-my-heading" id="project-my-heading">
-    <h3>------------------------------------------ PROJECTS ------------------------------------------</h3>
+  <div class="heading-projects">
+    <h1> PROJECTS </h1>
   </div>
-  <div class="project-main-div">
-    <div class="project-leftside-div">
-      <img src="./pics/game 1 .png">
-    </div>
-    <div class="project-rightside-div">
-      <H1>JAVASCRIPT GAME PROJECT</H1>
-      <H6>I MAKE THIS GAME IN WHICH YOU HAVE THREE CHANCES TO COLLECT TOTAL 100 MARKS IF IN THREE CHANCES YOU COLLECT
-        100 THEN YOU WIN IF YOU NOT THEN YOU LOSE
-        <br><br><br>
-        <div class="btn-row-div">
-          <div class="project-rightside-btn">
-            <a href="https://github.com/zeeshujunaid/js-game-1">
-              <button class="btn">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="height: 30px;width: 30px;">
-              </button>
-            </a>
-            <p>source code</p>
-          </div>
-          <div class="project-rightside-btn">
-            <a href="https://zjgame1.netlify.app/">
-              <button class="btn">
-                <img src="https://static.thenounproject.com/png/106632-200.png" style="height: 30px;width: 30px;">
-              </button>
-            </a>
-            <p>live projects</p>
+  <div class="projects-card-main-div" >
+    <div class="projects-row-card-div">
+      <div class="projects-card-div" >
+        <div class="card-projects"  data-aos="zoom-in-right">
+          <img src="./pics/website launch mockup instagram post - Made with PosterMyWall (1).jpg" alt="sporthubs website" style="height: 100%;width: 100%;object-fit: cover;">
+          <div class="card-projects__content">
+            <p class="card-projects__title">SPORTS HUB</p>
+            <p class="card-projects__description">THIS WEBSITE IS CREATED BY ME AND MY FRIENS ITS LIKE A OLX BUT DIFFERENT LIKE OLX YOU CAN PASTE YOUR ADD AND SEE DIFFERENT PEOPLE ADDS WE CREATE THIS BY USING FIREBASE TO LOGIN SINGUP AND POST ADD OF PEOPLE AND HTML,CSS TO DESIGN AND JAVASCRIPT FOR LOGICS </p>
+            <p style="display: flex;flex-direction: row;justify-content: space-around;width: 100%;"><button>LIVE PREVIEW</button><button>SOURCE CODE</button></p>
           </div>
         </div>
-      </H6>
-    </div>
-  </div>
-  <div class="project-main-div">
-    <div class="project-leftside-div">
-      <img src="./pics/zhmotor.png">
-    </div>
-    <div class="project-rightside-div">
-      <H1>JAVASCRIPT GAME PROJECT</H1>
-      <H6>I MAKE THIS by using html , css and this is a car website with different car company like honda and toyota for
-        that i added button on which if you click you will get to dedicated page for that company
-        <br><br><br>
-        <div class="btn-row-div">
-          <div class="project-rightside-btn">
-            <a href="#">
-              <button class="btn">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="height: 30px;width: 30px;">
-              </button>
-            </a>
-            <p>source code</p>
-          </div>
-          <div class="project-rightside-btn">
-            <a href="https://zhmotors.netlify.app/">
-              <button class="btn">
-                <img src="https://static.thenounproject.com/png/106632-200.png" style="height: 30px;width: 30px;">
-              </button>
-            </a>
-            <p>live projects</p>
+
+      </div>
+      <div class="projects-card-div">
+        <div class="card-projects" data-aos="zoom-in-left" >
+          <img src="./pics/zhmotor.png" alt="javascriptgame" style="height: 100%;width: 100%;object-fit: contain;">
+          <div class="card-projects__content">
+            <p class="card-projects__title">Card Title</p>
+            <p class="card-projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco.</p>
           </div>
         </div>
-      </H6>
+
+      </div>
     </div>
-  </div>
-  <div class="project-main-div">
-    <div class="project-leftside-div">
-      <img src="./pics/sndtosirchatappss.png">
-    </div>
-    <div class="project-rightside-div">
-      <H1>JAVASCRIPT CHAT APP PROJECT</H1>
-      <H6>this is my class project in which we need to make a chat app i make this using javascript array in which i put
-        some answer which will be autoreplied like a AI talking to you
-        <br><br><br>
-        <div class="btn-row-div">
-          <div class="project-rightside-btn">
-            <a href="https://github.com/zeeshujunaid/chat-app-project">
-              <button class="btn">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="height: 30px;width: 30px;">
-              </button>
-            </a>
-            <p>source code</p>
-          </div>
-          <div class="project-rightside-btn">
-            <a href="https://zjchatapp.netlify.app/">
-              <button class="btn">
-                <img src="https://static.thenounproject.com/png/106632-200.png" style="height: 30px;width: 30px;">
-              </button>
-            </a>
-            <p>live projects</p>
+
+
+    <div class="projects-row-card-div">
+      <div class="projects-card-div">
+        <div class="card-projects" data-aos="zoom-in-right">
+          <img src="./pics/sndtosirchatappss.png" alt="javascriptgame"
+            style="height: 100%;width: 100%;object-fit: contain;">
+          <div class="card-projects__content">
+            <p class="card-projects__title">Card Title</p>
+            <p class="card-projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco.</p>
           </div>
         </div>
-      </H6>
+
+      </div>
+      <div class="projects-card-div">
+        <div class="card-projects" data-aos="zoom-in-left">
+          <img src="./pics/mobile app screen.jpg" alt="javascriptgame"
+            style="height: 100%;width: 100%;object-fit: contain;">
+          <div class="card-projects__content">
+            <p class="card-projects__title">Card Title</p>
+            <p class="card-projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
+  <!--                                           contact form -->
+
+  <div data-aos="zoom-in-down"
+    style="display: flex;flex-direction: row;width: 100%;height: 80vh;padding-top:10vh;justify-content: space-around;">
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <div class="forms">
+
+        <input type="hidden" name="access_key" value="37e46cc1-6125-4b88-8a62-41ff747f0eb0">
+
+        <div class="title">Contact us</div>
+        <input type="text" placeholder="Your name" name="email" class="input">
+        <input type="text" placeholder="Your email" class="input" name="text">
+        <textarea placeholder="Your message" name="meesage"></textarea>
+
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <button type="submit">Submit Form</button>
+      </div>
+    </form>
+  </div>
+
+  <!--                                           contact form ends -->
+
+  <!--                                                projects ends -->
   <footer class="footer-main">
     <div class="home-town">
       <h2>HOME TOWN</h2>
       <p>karachi pakistan</p>
     </div>
     <div>
-      <p>© 2024 <a href="#" style="color: black;"> zeeshan junaid </a> All rights reserved</p>
+      <p>© 2024 <a href="#" style="color:white;"> zeeshan junaid </a> All rights reserved</p>
     </div>
     <div class="social-link">
       <h2>social links</h2>
@@ -356,6 +358,10 @@
   </footer>
   <!--                                             script                                                       -->
   <script src="index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

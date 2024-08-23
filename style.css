@@ -4,11 +4,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(./pics/background.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x:50% ;
-    background-position-y:50% ;
+    background-color: #0d1117;
+    color: white;
     scroll-behavior: smooth;
 }
 #loader-main-div {
@@ -22,10 +19,11 @@ body {
 .navbar {
     display: flex;
     flex-direction: row;
-    position: fixed;
+    /* position: fixed; */
     align-items: center;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: #000;
+    color:white;
 }
 
 .navbar-letf-side {
@@ -60,7 +58,8 @@ body {
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: black;
+    color: white;
+    text-decoration:none;
     font-style: unset;
 }
 
@@ -114,7 +113,6 @@ body {
 .content-main-div {
     display: flex;
     flex-direction: row;
-    padding-top: 7rem;
     padding-left: 150px;
 }
 
@@ -285,17 +283,27 @@ ul {
 .about-me-heading{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
     font-size: 30px;
-    padding-left: 80px;
-    padding-top: 10rem;
+    padding-top: 10vh;
+    height: 40vh;
 }
 .about-me-main-div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-left: 80px;
-    padding-top: 40px;
+    padding-top: 22vh;
     gap: 40px;
 
+}
+.about-me-main-div h1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .about-me-left-side{
     display: flex;
@@ -348,117 +356,87 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 }
-.about-me-right-side{
-    gap: 20px;
-    width: 80%;
-    padding-left:14vw;
-    background-color: rgba(255, 255, 255, 0.342) ;
-    border: 1px rgba(255, 255, 255, 0.61);
-    backdrop-filter: blur 10px;
-    border-radius:20px ;
+.heading-projects{
+    display: flex;flex-direction: row;align-items: center;justify-content: center;width: 100%;padding-top: 5vh;padding-bottom:5vh;height: 20vh;
 }
-.about-me-right-side h4{
-    padding-top: 20px;
+.projects-card-main-div{
+    display: flex;flex-direction: column;width: 100%;height: 100%;justify-content: space-around;gap: 10vh;
 }
-.project-my-heading{
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-    padding-left: 80px;
-    padding-top: 5rem;
- } 
-.project-main-div{
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    padding-left: 10rem !important;
-   padding-bottom: 20px;
+.projects-row-card-div{
+    display: flex;flex-direction: row;justify-content: space-around;
 }
-.project-leftside-div{
+.projects-card-div{
+    display: flex;flex-direction: row;width: 40%;justify-content: center;
+}
+/* From Uiverse.io by gharsh11032000 */ 
+.card-projects {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    /* background-color: #f2f2f2; */
+    border-radius: 10px;
     display: flex;
-    flex-direction: row;
-    width: 70%;
-    background-color: rgba(255, 255, 255, 0.315) ;
-    border: 1px white;
-    backdrop-filter: blur 10px;
-    border-radius:20px ;
-    justify-content: center;
     align-items: center;
-}
-.project-leftside-div img{
-    display: flex;
-    width:100%;
-    height: 20rem;
-    width: 30rem;
-    border-radius: 20px;
-}
-.project-rightside-div{
-    display: flex;
-    flex-direction: column;
-    width:70%;
-    height: 28rem;
-   background-color: rgba(255, 255, 255, 0.315) ;border: 1px white;
-    backdrop-filter: blur 10px;
-    border-radius:20px ;
-}
-.project-rightside-div h6{
-    font-family: "Poetsen One", sans-serif;
-font-size: 20px;
-padding-left: 30px;
-}
-.project-rightside-div h1{
-    font-family: "Poetsen One", sans-serif;
-font-size: x-large;
-padding-left: 30px;
-}
-.project-rightside-btn{
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px black;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  
+  .card-projects:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.623);
+  }
+  
+  .card-projects__content {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
-    padding-bottom: 75px;
-}
-.btn-row-div{
-    display: flex;
-    flex-direction: row;
-    gap: 130px;
-}
-.btn {
-    font-size: 1rem;
-    width: 5rem;
-    padding: 1rem ;
-    border: none;
-    outline: none;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: rgb(14, 14, 26);
-    color: rgb(234, 234, 234);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card-projects:hover .card-projects__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card-projects__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
     font-weight: 700;
-    transition: 0.6s;
-    box-shadow: 0px 0px 60px #1f4c65;
-    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
   }
   
-  .btn:active {
-    scale: 0.92;
+
+  
+  .card-projects__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
   }
   
-  .btn:hover {
-    background: rgb(2,29,78);
-    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
-    color: rgb(4, 4, 38);
-  }
   .footer-main{
-    display: flex;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
     font-size: larger;
     align-items: center;
     justify-content: space-around;
-    color: black;
+    background-color:black;
     flex-direction: row;
-    padding-top: 10rem;
-    background-image: url("./pics/wave.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    color:white ;
+    /* padding-top: 10rem; */
   }
   .social-link{
     display: flex;
@@ -472,7 +450,7 @@ padding-left: 30px;
   }
   .social-link-div-2 p{
   text-decoration: none;
-    color: black;
+    color: white;
   }
   .heading-for-mobile{
    display: none;     
@@ -637,7 +615,6 @@ padding-left: 30px;
     .project-main-div{
         display: flex;
         flex-direction: column;
-        padding-left: 5rem !important;
     }
     .project-leftside-div img{
         display: flex;
@@ -671,3 +648,61 @@ padding-left: 30px;
         padding-top: 5rem;
       }
 }
+
+/* From Uiverse.io by Yaya12085 */ 
+.forms {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+  }
+  
+  .forms .title {
+    color: royalblue;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .forms input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 90%;
+    height: 50px;
+  }
+  
+  .forms textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 90%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  
+  .forms button {
+    align-self:center;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+  }
+      
