@@ -427,7 +427,9 @@ justify-content: center;
     color: #777;
     line-height: 1.4;
   }
-  
+  .form-main-div{
+    display: flex;flex-direction: row;width: 100%;height: 80vh;padding-top:10vh;justify-content: space-around;
+  }
   .footer-main{
     display: flex;
     font-size: larger;
@@ -459,194 +461,105 @@ justify-content: center;
       display: none;
   }
 @media screen and (max-width: 900px) {
-    body {
-        margin: 0;
-        padding: 0;
-        background-image: url(./pics/background.svg);
-        background-repeat: no-repeat;
+    .heading-for-mobile{
+        display: none;     
+       }
+       .tool-for-mobile{
+           display: none;
+       }
+       .heading-projects{
+        display: none;
     }
-
     .navbar {
+        display: flex;
         flex-direction: column;
-        /* background-color: #0274b3; */
-        /* width: 100%; */
-    }
-
-    .navbar-letf-side {
-        flex-direction: row;
-        padding-left: 40px;
         width: 100%;
     }
-
+    
+    .navbar-letf-side {
+        display: flex;
+        width: 90%;
+        padding-left: 0px !important;
+        flex-direction: row;
+    }  
+    
     .navbar-right-side {
         display: flex;
-    flex-direction: row;
-    width: 60%;
-    /* background-color: #0274b3; */
+        flex-direction: row;
+        width: 80%;
     }
-
     .navbar-hire-btn {
         display: none;
-        align-items: center;
     }
-
     .content-main-div {
+        /* background-color: red; */
         display: flex;
         flex-direction: column;
-        padding-top: 8rem;
-        padding-left: 20px;
-    }
-
-    .content-left-side {
-        width: 90%;
-        /* height: 50px; */
-        align-items: center;
-        flex-direction: column;
-    }
-.content-for-mobile{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 3vh;
-}
-    .content-left-side h3 {
-        padding-bottom: 35px;
-    }
-
-    .link-icon-div {
-        width: 80%;
-    }
-
-    .content-right-side {
         width: 100%;
-        padding-top: 15rem !important;
-        z-index: -1;
-        filter: brightness(-20px) blur(2px);
-
+        gap: 5px;
+        padding-left: 1px;
+        height: 100vh;
+        
     }
+.content-left-side {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
 
-    .content-right-side img {
-        height: 20rem;
-        width: 80%;
-    }
+.content-left-side h4 {
+    font: bold;
+    font-size: 35px;
+    /* padding-bottom: 5px; */
+    /* background-color: beige; */
+    height: 100%;
+
+}
+
+.content-left-side h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* padding-bottom: 3px; */
+    height: 100%;
+    font-size: 40px;
+}
+
+.content-left-side h3 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    /* padding-bottom: 3px; */
+    height: 100%;
+    font-style: normal;
+}
+.link-icon-div {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around !important;
+}
+.content-right-side {
+    display: none;
+}
     .about-me-heading{
-        display: flex;
-        flex-direction: row;
-        font-size: 7px;
-        padding-left:43px;
-        width: 80%;
+        display: none;
     }
-    .about-me-left-side{
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.315) ;
-        border: 1px white;
-        backdrop-filter: blur 10px;
-        border-radius:20px ;
-        width: 50%;
-        padding-left: 1rem !important;
-    }
-    .about-me-left-side h1{
-        display: flex;
-        flex-direction:column;
-        width: 100%;   
-    }
-
     .about-me-main-div{
-        flex-direction: column;
+        display: none;
+    
     }
-    .about-me-left-side h1{
+    .projects-card-main-div{
         display: none;
     }
-    .about-left-side-pic-div{
-        display: flex;
-        flex-direction: column;
-        width: 10%;
-        display: none;
-    }
-    .about-left-side-pic-div img{
-        height: 4rem;
-        width: 6rem;
-        ;
-    }
-    .heading-for-mobile{
-       display: flex;
-       flex-direction: column; 
-    }
-    .tool-for-mobile{
-        display:flex;
-       flex-direction: row;
-       justify-content: space-around; 
-    }
-    .tool-for-mobile h3{
-        background-color: #24262ae1;
-        color: white;
-        border: 1px solid black;
-    }
-    .about-left-side-pic-second-div {
-        display: flex;
-        flex-direction: column !important;
-        display: none;
-
-    }
-    .about-left-side-pic-second-div img{
-        height: 6rem;
-        width: 50%;
-        display: flex;
-        flex-direction: column !important;
-    }
-    .about-me-right-side{
-        gap: 20px;
-        /* padding-left: 4rem !important; */
-        width:75%;
-        background-color: rgba(255, 255, 255, 0.315) ;
-        border: 1px white;
-        backdrop-filter: blur 10px;
-        border-radius:20px ;
-    }
-    .about-me-right-side h4{
-        padding-top: 20px;
-    }
-    .project-my-heading{
-        display: flex;
-        flex-direction: row;
-        font-size: 7px; 
-        padding-left: 2rem !important;    
-    }
-    .project-main-div{
-        display: flex;
-        flex-direction: column;
-    }
-    .project-leftside-div img{
-        display: flex;
-        padding-top: 5px;
-        width:30%;
-        height: 10rem;
-        width: 15rem;
-        border-radius: 20px;
-    }
-    .project-rightside-div{
-        display: flex;
-    }
-    .project-rightside-div h6{
-        display:flex ;
-        font-size: small;
-        
-    }
-    .project-rightside-div h1{
-       display: flex;
-    }
-    .btn-row-div{
-        display: flex !important;
-        flex-direction:column !important;
-        gap: 2px !important;
-        
-    }
-    .footer-main{
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        padding-top: 5rem;
-      }
+  .form-main-div{
+    display: none;
+  }
+  .footer-main{
+    display: none;
+   
+  }
 }
 
 /* From Uiverse.io by Yaya12085 */ 
